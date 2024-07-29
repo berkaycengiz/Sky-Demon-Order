@@ -1,0 +1,54 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1152px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.manga{
+    color: var(--secondary-color);
+}
+
+.manga h2{
+    font-size: 36px;
+    height: 40px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.mangacontainer{
+    max-width: 100%;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.mangacard{
+    height: 180px;
+    background-color: rgba(155, 155, 155, 0.082);
+    width: 568px;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Sky Demon Order</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="/script/onclick.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script/featured.js" defer></script>
+        <script src="script/new.js" defer></script>
+        <script src="/script/dark-theme.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="bar">
+                <div class="logo">
+                    <a href="/home.html" class="logolink">
+                        <h1>S.</h1>
+                    </a>
+                </div>
+                <div class="navbuttons">
+                    <a href="/projects.html" class="navlink">
+                        <h1>Projects</h1>
+                    </a>
+                    <a href="/mature.html" class="navlink">
+                        <h1>Mature</h1> 
+                        <span class="m">M</span>
+                    </a>
+                    <a href="/products.html" class="navlink">
+                        <h1>Products</h1>
+                    </a>
+                    <a href="/subscriptions.html" class="navlink">
+                        <h1>Subscriptions</h1>
+                    </a>
+                    <a href="https://discord.gg/eK6Gky3RW7" target="_blank" class="navlink">
+                        <h1>Discord</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="bar2">
+                <div class="CheckBox">
+                    <input type="checkbox" id="togglerid" class="toggler" onclick="darkTheme()">
+                    <div class="IconContainer">
+                        <div class="DarkMode" id="darkid">
+                            <i class='bx bxs-moon'></i>
+                        </div>
+                        <div class="LightMode" id="lightid">
+                            <i class='bx bx-sun' ></i>
+                        </div>
+                    </div>
+                    <p id="text1" style="display:block">SFW</p>
+                    <input type="checkbox" id="sliderid" class="slider" onclick="onClick()">
+                    <p id="text2" style="display:none">18+</p>
+                </div>
+                <div class="navbuttons">
+                    <a href="login.html" class="navlink">
+                        <h1>Login</h1>
+                    </a>
+                    <a href="register.html" class="navlink">
+                        <h1>Register</h1>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="menu">
+                <div class="buttons" id="buttonsid">
+                    <a href="/projects.html" class="link"> 
+                        <i class='bx bx-book-open'></i>
+                        <span><br>PROJECTS</span>
+                    </a>
+                    <a href="/mature.html" class="link">
+                        <i class='bx bx-wink-smile'></i>
+                        <span><br>MATURE</span>
+                    </a>
+                    <a href="/donate.html" class="link">
+                        <i class='bx bx-donate-heart'></i>
+                        <span><br>DONATE</span>
+                    </a>
+                    <a href="/products.html" class="link">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span><br>SHOP</span>
+                    </a>
+                    <a href="/subscriptions.html" class="link">
+                        <i class='bx bx-lock-open'></i>
+                        <span><br>UNLOCK</span>
+                    </a>
+                </div>
+            </div>
+            <div class="manga">
+                <h2>Featured Projects</h2>
+                <div class="featured">
+                    <div class="featured1">
+                        <div class="imgcontainer">
+                            <a href="" class="readlink">
+                                <img alt="manganame" id="img" src="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="top">
+                                <div class="stats">
+                                    <span class="episode">273 Episodes</span>
+                                    <div class="stat">
+                                        <div class="eye">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                        <span class="views" id="views"></span>
+                                    </div>
+                                </div>
+                                <a href="" class="headers" id="headers"></a>
+                                <div class="tag" id="tags">
+                                </div>
+                            </div>
+                            <p id="p"></p>
+                            <a href="" class="btn">READ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="radiobuttons">
+                    <input type="radio" class="featuredradio" id="radio1" name="featuredr" checked>
+                    <input type="radio" class="featuredradio" id="radio2" name="featuredr">
+                    <input type="radio" class="featuredradio" id="radio3" name="featuredr">
+                    <input type="radio" class="featuredradio" id="radio4" name="featuredr">
+                    <input type="radio" class="featuredradio" id="radio5" name="featuredr">
+                </div>
+                <h2>New Projects</h2>
+                <div class="new">
+                    <div class="new1">
+                        <div class="imgcontainer">
+                            <a href="" class="readlink">
+                                <img alt="manganame" id="img" src="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <div class="top">
+                                <div class="stats">
+                                    <span class="episode">273 Episodes</span>
+                                    <div class="stat">
+                                        <div class="eye">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                        <span class="views" id="views"></span>
+                                    </div>
+                                </div>
+                                <a href="" class="headers" id="headers"></a>
+                                <div class="tag" id="tags">
+                                </div>
+                            </div>
+                            <p id="p"></p>
+                            <a href="" class="btn">READ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="radiobuttons">
+                    <input type="radio" class="featuredradio" id="radio1" name="newr" checked>
+                    <input type="radio" class="featuredradio" id="radio2" name="newr">
+                    <input type="radio" class="featuredradio" id="radio3" name="newr">
+                    <input type="radio" class="featuredradio" id="radio4" name="newr">
+                    <input type="radio" class="featuredradio" id="radio5" name="newr">
+                </div>
+                <h2>Latest Releases</h2>
+                <div class="latest">
+                    <div class="mangacard">            
+                        <div class="imgcontainer2">
+                            <a href="" class="latestlink">
+                                <img alt="manganame" src="">
+                            </a>
+                        </div>
+                        <div class="info2">
+                            <span class="episode">145 Episodes</span>
+                            <a href="" class="headerslink">
+                                <p>Lorem Ipsum</p>
+                            </a>
+                            <div class="latestepisodes">
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mangacard">
+                        <div class="imgcontainer2">
+                            <a href="" class="latestlink">
+                                <img alt="manganame" src="">
+                            </a>
+                        </div>
+                        <div class="info2">
+                            <span class="episode">145 Episodes</span>
+                            <div class="headers2">
+                                <a href="" class="headerslink">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="latestepisodes">
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mangacard">
+                        <div class="imgcontainer2">
+                            <a href="" class="latestlink">
+                                <img alt="manganame" src="">
+                            </a>
+                        </div>
+                        <div class="info2">
+                            <span class="episode">145 Episodes</span>
+                            <div class="headers2">
+                                <a href="" class="headerslink">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="latestepisodes">
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mangacard">
+                        <div class="imgcontainer2">
+                            <a href="" class="latestlink">
+                                <img alt="manganame" src="">
+                            </a>
+                        </div>
+                        <div class="info2">
+                            <span class="episode">145 Episodes</span>
+                            <div class="headers2">
+                                <a href="" class="headerslink">
+                                    <p>Lorem Ipsum</p>
+                                </a>
+                            </div>
+                            <div class="latestepisodes">
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <div class="latestep">
+                                    <a href="" class="episodelink">Episode 31</a>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="homelogo">
+                <a href="/home.html" class="logolink">
+                    <h1>S.</h1>
+                </a>
+            </div>
+            <div class="links">
+                <a href="/home.html" class="footerlink">
+                    Home
+                </a>
+                <a href="" class="footerlink">
+                    Privacy
+                </a>
+                <a href="" class="footerlink">
+                    DMCA
+                </a>
+                 <a href="" class="footerlink">
+                    FAQ
+                </a>
+            </div>
+            <div class="dc">
+                <a href="https://discord.gg/eK6Gky3RW7" class="discord" target="_blank">
+                    <i class='bx bxl-discord-alt'></i>
+                </a>
+            </div>
+            <div class="textr">
+                <p>© 2024 Sky Demon Order. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

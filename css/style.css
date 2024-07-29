@@ -1,0 +1,340 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.container i{
+    position: relative;
+    background-color: rgba(155, 155, 155, 0.082);
+    width: 50px;
+    height: 50px;
+    padding-top: 12.5px;
+    border-radius: 50%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: center;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1152px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 25px;
+    transition: 0.15s ease-in-out;
+}
+
+.menu span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.manga{
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.manga h2{
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.manga .featured{
+    max-width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    background-color: rgba(155, 155, 155, 0.082);
+    padding: 24px;
+}
+
+.featured1{
+    width: 100%;
+    display: flex;
+}
+
+.imgcontainer{
+    width: 130px;
+    height: 202px;
+}
+
+.readlink{
+    height: 202px;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    padding-left: 24px;
+    width: 974px;
+}
+
+.stats{
+    height: 16px;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.stats span{
+    color: #6a6a6a;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 600;
+}
+
+.stats .stat{
+    display: flex;
+    align-items: center;
+}
+
+.stat .eye{
+    color: #6a6a6a;
+    position: relative;
+    font-size: 12px;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
+}
+
+.headers{
+    text-align: left;
+    height: 28px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tag{
+    margin-top: 4px;
+    height: 24px;
+    display: flex;
+    column-gap: 4px;
+}
+
+.tags{
+    top: 4px;
+    position: relative;
+    height: 20px;
+    padding: 4px 8px;   
+    background-color: #3f3f46;
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.info p{
+    max-height: 40px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info .btn{
+    margin-top: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    background-color: #3f3f46;
+    padding: 8px 16px;
+    height: 36px;
+    border-radius: 4px;
+    transition: 0.15s ease-in-out;
+}
+
+.radiobuttons{
+    height: 40px;
+    display: flex; 
+    justify-content: center;
+    padding: 16px;
+}
+
+.featuredradio{
+    height: 8px;
+    width: 8px;
+    margin-left: 8px;
+    appearance: none;
+    background-color: var(--secondary-color);
+    border-radius: 999px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.new1{
+    width: 100%;
+    display: flex;
+}
+
+.manga .new{
+    max-width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    background-color: rgba(155, 155, 155, 0.082);
+    padding: 24px;
+}
+
+.manga .latest{
+    max-width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.mangacard{
+    height: 180px;
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.082);
+    display: flex;
+    overflow: hidden;
+}
+
+.imgcontainer2{
+    width: 120px;
+    height: 180px;
+}
+
+.latestlink{
+    height: 180px;
+}
+
+.mangacard .episode{
+    color: #6a6a6a;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 600;
+}
+
+.info2{
+    position: relative;
+    padding: 12px 16px;
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerslink{
+    margin-top: 4px;    
+    text-align: left;
+    height: 24px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+}
+
+.headerslink p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* .info2 .m{
+
+} */
+
+.latestepisodes{
+    display: flex;
+    flex-direction: column;
+}
+
+.latestep{
+    margin-top: 8px;
+    height: 16px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.latest span{
+    color: #6a6a6a;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 600;
+}
+
+.latest .episodelink{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    height: 16px;
+}
+
+.featuredradio:checked{
+    background-color: rgb(246, 82, 82);
+}
+
+.link:hover{
+    color: rgb(246, 82, 82);
+    transform: scale(1.05);
+}
+
+.headers:hover{
+    color: rgb(246, 82, 82);
+}
+
+.tags:hover{
+    color: rgb(246, 82, 82);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.episodelink:hover{
+    color: rgb(246, 82, 82);
+}
+
+.headerslink:hover{
+    color: rgb(246, 82, 82);
+}

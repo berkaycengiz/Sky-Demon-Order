@@ -1,0 +1,176 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    justify-content: center;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1152px;
+    padding-bottom: 24px;
+}
+
+.header{
+    height: 96px;
+    padding: 24px 0px;
+}
+
+.header h1{
+    font-size: 48px;
+    position: relative;
+    color: var(--secondary-color);
+    height: 48px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.grid{
+    padding: 24px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 100%;
+    gap: 24px;
+}
+
+.donations{
+    position: relative;
+    padding: 12px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    overflow: hidden;
+    border: 1px solid;
+    border-color: rgba(104, 104, 104, 0.392);
+    transition: 0.5s;
+}
+
+.names{
+    height: 44px;
+    padding: 8px;
+}
+
+.names h3{
+    font-size: 18px;
+    height: 28px;
+    font-weight: 600;
+}
+
+.imgcontainer{
+    padding: 8px;
+    height: 146px;
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    max-height: 130px;
+}
+
+.text{
+    height: 56px;
+    padding: 8px;
+}
+
+.text p{
+    font-size: 14px;
+    font-weight: 400;
+    height: 40px;
+    text-align: center;
+}
+
+.donate{
+    height: 44px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 19px;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.stick1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+    background-color: rgb(246, 82, 82);
+}
+
+.stick2{
+    position: absolute;
+    width: 2px;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.3s;
+    background-color: rgb(246, 82, 82);
+}
+
+.stick3{
+    position: absolute;
+    width: 2px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+    background-color: rgb(246, 82, 82);
+}
+
+.stick4{
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+    background-color: rgb(246, 82, 82);
+}
+
+.donations:hover > .stick1{
+    transform: scaleX(1);
+}
+
+.donations:hover > .stick2{
+    transform: scaleY(1);
+}
+
+.donations:hover > .stick3{
+    transform: scaleY(1);
+}
+
+.donations:hover > .stick4{
+    transform: scalex(1);
+}
+
+.donations:hover{
+    transform: scale(1.05);
+}

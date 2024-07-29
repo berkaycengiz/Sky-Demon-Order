@@ -1,0 +1,202 @@
+:root{
+    --primary-color: #18191a;
+    --secondary-color: #fff;
+}
+.dark-mode{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+nav{
+    width: 1152px;
+    position: relative;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.bar2{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo .logolink{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+    transition: 0.15s;
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.logo h1{
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    border: 2px solid;
+}
+
+.navbuttons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navlink{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 11px;
+    color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.navlink span{
+    color: rgb(246, 82, 82);
+}
+
+.navlink::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(246, 82, 82);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-out;
+}
+
+.navlink h1{
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.navlink .m{
+    position: relative;
+    color: #fff;
+    top: 22px;
+    height: 20px;
+    width: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 8px;
+    background-color: rgb(220, 38, 38);
+    border-radius: 2.5px;
+}
+
+.CheckBox{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.slider{
+    appearance: none;
+    background: #c0c0c0;
+    width: 40px;
+    height: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+}
+
+.slider::before{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    margin-top: 2px;
+    margin-left: 2px;
+    transition: 0.15s;
+}
+
+#text1{
+    font-size: 12.3px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--secondary-color);
+}
+
+#text2{
+    font-size: 12.3px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: var(--secondary-color);
+}
+
+.toggler{
+    appearance: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+}
+
+.IconContainer{
+    position: absolute;
+    display: flex;
+    padding-top: 3px;
+}
+
+.DarkMode{
+    visibility: visible;
+}
+
+.LightMode{
+    color: #fff;
+    position: absolute;
+    visibility: hidden;
+}
+
+.navlink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logolink:hover{
+    color: rgb(246, 82, 82);
+}
+
+.slider:checked::before{
+    transform: translateX(20px);
+}
+
+.toggler:hover + .IconContainer .DarkMode{
+    color: rgb(246, 82, 82);
+}
+
+.toggler:hover + .IconContainer .LightMode{
+    color: rgb(246, 82, 82);
+}
+
+.toggler:checked + .IconContainer .DarkMode{
+    visibility: hidden;
+}
+
+.toggler:checked + .IconContainer .LightMode{
+    visibility: visible;
+}

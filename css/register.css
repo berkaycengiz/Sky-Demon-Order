@@ -1,0 +1,201 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .logolink{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    color: #000;
+    font-size: 27px;
+    border: 3px solid;
+}
+
+.logo h1{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    font-weight: 600;
+    bottom: 5px;
+}
+
+.card{
+    margin-top: 24px;
+    width: 448px;
+    padding: 1.5rem;
+    border: 1px solid #868686;
+    border-radius: 15px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 600;
+    height: 20px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control .error{
+    margin-left: 3px;
+    margin-top: 5px;
+    color: red;
+    font-size: 13px;
+}
+
+.name{
+    padding: 10px;
+    margin-top: 4px;
+    height: 41.6px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.usernamecontainer{
+    margin-top: 16px;
+}
+
+.username{
+    padding: 10px;
+    margin-top: 4px;
+    height: 41.6px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.emailcontainer{
+    margin-top: 16px;
+}
+
+.email{
+    padding: 10px;
+    margin-top: 4px;
+    height: 41.6px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.passwordcontainer{
+    margin-top: 16px;
+}
+
+.password{
+    padding: 10px;
+    margin-top: 4px;
+    height: 41.6px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.cpassword{
+    padding: 10px;
+    margin-top: 4px;
+    height: 41.6px;
+    border: 1px solid #868686;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    height: 40px;
+}
+
+.registered{
+    font-family: "Roboto Mono", monospace;
+    color: #454545;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.register{
+    height: 40px;
+    width: 99.86px;
+    border-radius: .375rem;
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto Mono", monospace;
+    transition: 0.15s;
+}
+
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    height: 24px;
+    flex-direction: column;
+}
+
+.or p{
+    font-family: "Roboto Mono", monospace;
+    color: #454545;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.discord{
+    position: relative;
+    height: 28px;
+    font-size: 28px;
+}
+
+.discord i{
+    position: relative;
+    bottom: 5px;
+    color: #5865f2;
+}
+
+.registered:hover{
+    color: #000;
+}
+
+.register:hover{
+    background-color: #404040;
+}
