@@ -3,9 +3,11 @@ function onClick() {
     var text2 = document.getElementById("text2");
     var text1 = document.getElementById("text1");
     let color = "#c0c0c0";
+
     if(document.body.classList.contains("dark-mode")){
         color = "#313232";
     }
+    
     else{
         color = "#c0c0c0";
     }

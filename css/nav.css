@@ -1,10 +1,12 @@
 :root{
     --primary-color: #18191a;
     --secondary-color: #fff;
+    --color: #fff;
 }
 .dark-mode{
     --primary-color: #fff;
     --secondary-color: #000;
+    --color: #22543D;
 }
 
 nav{

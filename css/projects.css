@@ -50,5 +50,135 @@ body{
 .mangacard{
     height: 180px;
     background-color: rgba(155, 155, 155, 0.082);
-    width: 568px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.imgcontainer{
+    width: 120px;
+    height: 180px;
+}
+
+.readlink{
+    height: 180px;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    padding: 16px;
+    width: 448px;
+}
+
+.stats{
+    height: 16px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.stats span{
+    color: #6a6a6a;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 600;
+}
+
+.stats .stat{
+    display: flex;
+    align-items: center;
+}
+
+.stat .eye{
+    color: #6a6a6a;
+    position: relative;
+    font-size: 12px;
+    height: 12px;
+    width: 12px;
+    margin-right: 2px;
+}
+
+.headers{
+    text-align: left;
+    height: 24px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tag{
+    margin-bottom: 16px;
+    height: 24px;
+    display: flex;
+    column-gap: 4px;
+}
+
+.tags{
+    top: 4px;
+    position: relative;
+    height: 20px;
+    padding: 4px 8px;   
+    background-color: #3f3f46;
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.info p{
+    max-height: 40px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.status{
+    width: 66.3px;
+    height: 20.8px;
+    position: absolute;
+    padding: 4px 8px;
+    left: 4px;
+    bottom: 8px;
+    background-color: var(--color);
+    border-radius: 4px;
+}
+
+.inner{
+    width: 100%;
+    height: 100%;
+    font-size: 10.4px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color);
+    position: relative;
+    display: block;
+}
+
+.tags:hover{
+    color: rgb(246, 82, 82);
+}
+
+.headers:hover{
+    color: rgb(246, 82, 82);
 }
