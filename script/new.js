@@ -2,7 +2,8 @@ var img2 = document.getElementById("img2");
 var views2 = document.getElementById("views2");
 var p2 = document.getElementById("p2");
 var headers2 = document.getElementById("headers2");
-axios.get('https://novels.battos.dev/api/project/new')
+
+axios.get('https://novels.battos.dev/api/project/')
 .then(function (response) {
             var tagsArray = response.data[0].tags.split(',');
             var tagsContainer = document.getElementById('tags2');

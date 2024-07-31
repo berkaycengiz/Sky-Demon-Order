@@ -3,6 +3,7 @@ var views = document.getElementById("views");
 var p = document.getElementById("p");
 var headers = document.getElementById("headers");
 
+
 axios.get('https://novels.battos.dev/api/project/featured')
 .then(function (response) {
             var tagsArray = response.data[0].tags.split(',');

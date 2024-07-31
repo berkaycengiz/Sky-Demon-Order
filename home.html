@@ -15,6 +15,7 @@
         <script src="/script/onclick.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="script/featured.js" defer></script>
+        <script src="script/latest.js" defer></script>
         <script src="script/new.js" defer></script>
         <script src="/script/dark-theme.js" defer></script>
     </head>
@@ -97,7 +98,7 @@
             </div>
             <div class="manga">
                 <h2>Featured Projects</h2>
-                <div class="featured">
+                <div class="featured" id="featured">
                     <div class="featured1">
                         <div class="imgcontainer">
                             <a href="" class="readlink">
@@ -136,7 +137,7 @@
                     <div class="new1">
                         <div class="imgcontainer">
                             <a href="" class="readlink">
-                                <img alt="manganame" id="img" src="">
+                                <img alt="manganame" id="img2" src="">
                             </a>
                         </div>
                         <div class="info">
@@ -147,14 +148,14 @@
                                         <div class="eye">
                                             <span class="material-symbols-outlined">visibility</span>
                                         </div>
-                                        <span class="views" id="views"></span>
+                                        <span class="views" id="views2"></span>
                                     </div>
                                 </div>
-                                <a href="" class="headers" id="headers"></a>
-                                <div class="tag" id="tags">
+                                <a href="" class="headers" id="headers2"></a>
+                                <div class="tag" id="tags2">
                                 </div>
                             </div>
-                            <p id="p"></p>
+                            <p id="p2"></p>
                             <a href="" class="btn">READ</a>
                         </div>
                     </div>
@@ -167,137 +168,8 @@
                     <input type="radio" class="featuredradio" id="radio5" name="newr">
                 </div>
                 <h2>Latest Releases</h2>
-                <div class="latest">
-                    <div class="mangacard">            
-                        <div class="imgcontainer2">
-                            <a href="" class="latestlink">
-                                <img alt="manganame" src="">
-                            </a>
-                        </div>
-                        <div class="info2">
-                            <span class="episode">145 Episodes</span>
-                            <a href="" class="headerslink">
-                                <p>Lorem Ipsum</p>
-                            </a>
-                            <div class="latestepisodes">
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mangacard">
-                        <div class="imgcontainer2">
-                            <a href="" class="latestlink">
-                                <img alt="manganame" src="">
-                            </a>
-                        </div>
-                        <div class="info2">
-                            <span class="episode">145 Episodes</span>
-                            <div class="headers2">
-                                <a href="" class="headerslink">
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </div>
-                            <div class="latestepisodes">
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mangacard">
-                        <div class="imgcontainer2">
-                            <a href="" class="latestlink">
-                                <img alt="manganame" src="">
-                            </a>
-                        </div>
-                        <div class="info2">
-                            <span class="episode">145 Episodes</span>
-                            <div class="headers2">
-                                <a href="" class="headerslink">
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </div>
-                            <div class="latestepisodes">
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mangacard">
-                        <div class="imgcontainer2">
-                            <a href="" class="latestlink">
-                                <img alt="manganame" src="">
-                            </a>
-                        </div>
-                        <div class="info2">
-                            <span class="episode">145 Episodes</span>
-                            <div class="headers2">
-                                <a href="" class="headerslink">
-                                    <p>Lorem Ipsum</p>
-                                </a>
-                            </div>
-                            <div class="latestepisodes">
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                                <div class="latestep">
-                                    <a href="" class="episodelink">Episode 31</a>
-                                    <span>2 hours ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="latest" id="latest">
+
                 </div>
             </div>
         </div>
