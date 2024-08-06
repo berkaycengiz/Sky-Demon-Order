@@ -11,13 +11,13 @@ a{
     text-align: center;
 }
 
-/* @media screen and (min-width: 640px) {
+@media screen and (min-width: 0px) {
     .container {
         padding-left: 24px;
         padding-right: 24px;
         max-width: 100%;
     }
-} */
+}
 
 @media screen and (min-width: 1024px) {
     .container {
@@ -55,7 +55,7 @@ body{
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1152px;
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -114,7 +114,7 @@ body{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -126,7 +126,7 @@ img{
 
 .info{
     padding-left: 24px;
-    width: 974px;
+    width: calc(100% - 130px);
 }
 
 .stats{
@@ -175,6 +175,7 @@ img{
     height: 24px;
     display: flex;
     column-gap: 4px;
+    white-space: nowrap;
 }
 
 .tags{
@@ -243,12 +244,32 @@ img{
     padding: 24px;
 }
 
+@media screen and (min-width: 768px) {
+    .latest {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .latest {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .latest {
+        column-gap: 32px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 .manga .latest{
     max-width: 100%;
     margin-top: 25px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;
+    row-gap: 32px;
 }
 
 .mangacard{

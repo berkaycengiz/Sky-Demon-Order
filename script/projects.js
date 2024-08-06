@@ -23,7 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="stats">
                                     <span class="episode">${chapters.length} Episodes</span>
                                     <div class="stat">
-                                        <span class="views" id="views">${item.views} Views</span>
+                                        <div class="eye">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </div>
+                                        <span class="views" id="views">${item.views}</span>
                                     </div>
                                 </div>
                                 <a href="" class="headers" id="headers">${item.title}</a>
