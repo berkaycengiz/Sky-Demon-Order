@@ -9,7 +9,7 @@
     --color: #fff;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 0px) {
     nav {
         padding-left: 24px;
         padding-right: 24px;
@@ -22,6 +22,9 @@
         padding-left: 24px;
         padding-right: 24px;
         max-width: 1024px;
+    }
+    .navbuttons{
+        display: flex;
     }
 }
 
@@ -81,9 +84,43 @@ nav{
 }
 
 .navbuttons{
-    display: flex;
+    display: none;
     height: 100%;
     align-items: center;
+}
+
+.navopener{
+    width: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}
+
+.navopener .navtoggler{
+    appearance: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    z-index: 10;
+    position: absolute;
+}
+
+.navopener span{
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .navbuttons{
+        display: flex;
+    }
+    .navopener{
+        display: none;
+    }
 }
 
 .navlink{
