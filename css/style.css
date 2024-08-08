@@ -179,7 +179,13 @@ img{
     display: flex;
     column-gap: 4px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tag::-webkit-scrollbar{
+    display: none;
 }
 
 .tags{
