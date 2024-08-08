@@ -236,13 +236,13 @@ nav{
 
 .responsivenav{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     border-bottom: 2px solid;
     border-color: rgba(94, 94, 94, 0.125);
 }
 
 .navbuttons2{
+    display: flex;
+    flex-direction: column;
     padding: 8px 0px 12px;
 }
 
@@ -257,6 +257,7 @@ nav{
     background: var(--primary-color);
     padding: 8px 16px 8px 24px;
     margin-top: 4px;
+    transition: 0.15s;
 }
 
 .navlink2:first-child{
@@ -278,6 +279,20 @@ nav{
     margin-left: 8px;
     background-color: rgb(220, 38, 38);
     border-radius: 2.5px;
+}
+
+.navlink2 .stick{
+    display: flex;
+    color: rgb(246, 82, 82);
+}
+
+.navlink2 .stick::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border-left: 4px solid;
 }
 
 .navlink:hover::after {
@@ -309,4 +324,6 @@ nav{
     visibility: visible;
 }
 
-.navtoggler:checked 
+.navlink2:hover{
+    color: rgb(246, 82, 82);
+}

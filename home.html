@@ -19,6 +19,7 @@
         <script src="/script/new.js" defer></script>
         <script src="/script/utils.js" defer></script>
         <script src="/script/dark-theme.js" defer></script>
+        <script src="/script/responsivenav.js" defer></script>
     </head>
     <body>
         <nav>
@@ -71,14 +72,14 @@
                     </a>
                 </div>
                 <div class="navopener">
-                    <input type="checkbox" class="navtoggler">
+                    <input type="checkbox" class="navtoggler" id="navtogglerid" onclick="Checked()">
                     <span class="material-symbols-outlined">
                         account_circle
                     </span>
                 </div>
             </div>
         </nav>
-        <div class="responsivenav">
+        <div class="responsivenav" id="responsivenavid" style="display: none;">
             <div class="navbuttons2">
                 <a href="login.html" class="navlink2">
                     <h1>Login</h1>
@@ -87,7 +88,7 @@
                     <h1>Register</h1>
                 </a>
                 <a href="/projects.html" class="navlink2">
-                    <h1>Projects</h1>
+                    <span class="stick"><h1>Projects</h1></span>
                 </a>
                 <a href="/mature.html" class="navlink2">
                     <h1>Mature</h1> 
