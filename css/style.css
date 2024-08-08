@@ -70,6 +70,7 @@ body{
 .buttons{
     display: flex;
     gap: 20px;
+    overflow: hidden;
 }
 
 .link{
@@ -92,6 +93,7 @@ body{
 .manga h2{
     font-weight: 800;
     margin-top: 25px;
+    overflow: hidden;
 }
 
 .manga .featured{
@@ -130,6 +132,7 @@ img{
 .info{
     padding-left: 24px;
     width: calc(100% - 130px);
+    overflow: hidden;
 }
 
 .stats{
@@ -146,11 +149,13 @@ img{
     font-size: 12px;
     height: 16px;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .stats .stat{
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .stat .eye{
@@ -160,6 +165,7 @@ img{
     height: 12px;
     width: 12px;
     margin-right: 2px;
+    overflow: hidden;
 }
 
 .headers{
@@ -221,6 +227,7 @@ img{
     height: 36px;
     border-radius: 4px;
     transition: 0.15s ease-in-out;
+    overflow: hidden;
 }
 
 .radiobuttons{
