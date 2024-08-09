@@ -20,20 +20,44 @@ body{
     justify-content: center;
 }
 
+@media screen and (min-width: 0px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1152px;
+    }
+}
+
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1152px;
+    width: 100%;
     padding-bottom: 24px;
 }
 
 .header{
-    height: 96px;
     padding: 24px 0px;
+    overflow: hidden;
 }
 
 .header h1{
-    font-size: 48px;
+    font-size: 36px;
     position: relative;
     color: var(--secondary-color);
     height: 48px;
@@ -41,10 +65,34 @@ body{
     line-height: 48px;
 }
 
+@media screen and (min-width: 640px){
+    .header h1{
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 0px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
 .grid{
     padding: 24px 0px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
     max-width: 100%;
     gap: 24px;
 }
@@ -61,13 +109,11 @@ body{
 }
 
 .names{
-    height: 44px;
     padding: 8px;
 }
 
 .names h3{
     font-size: 18px;
-    height: 28px;
     font-weight: 600;
 }
 
@@ -84,19 +130,17 @@ img{
 }
 
 .text{
-    height: 56px;
+    min-height: 56px;
     padding: 8px;
 }
 
 .text p{
     font-size: 14px;
     font-weight: 400;
-    height: 40px;
     text-align: center;
 }
 
 .donate{
-    height: 44px;
     padding: 8px 16px;
     font-weight: 600;
     font-size: 19px;

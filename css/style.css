@@ -70,7 +70,13 @@ body{
 .buttons{
     display: flex;
     gap: 20px;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tag::-webkit-scrollbar{
+    display: none;
 }
 
 .link{

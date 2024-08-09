@@ -13,11 +13,20 @@ body{
 }
 
 .container{
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        justify-content: center;
+        padding: 0px;
+    }
 }
 
 .logo{
@@ -47,13 +56,19 @@ body{
     bottom: 5px;
 }
 
+@media screen and (min-width: 640px) {
+    .card {
+        max-width: 448px;
+    }
+}
+
 .card{
     margin-top: 24px;
-    width: 448px;
-    height: 368.8px;
+    width: 100%;
     padding: 1.5rem;
     border: 1px solid #868686;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .form{
